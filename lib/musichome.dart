@@ -2,9 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:music_app/playhome1.dart';
 import 'package:music_app/playhome2.dart';
 import 'package:music_app/playhome3.dart';
+import 'package:flutter/material.dart';
 
-class Musichomescreen extends StatelessWidget {
+class Musichomescreen extends StatefulWidget {
   const Musichomescreen({super.key});
+
+  @override
+  State<Musichomescreen> createState() => _MusichomescreenState();
+}
+
+class _MusichomescreenState extends State<Musichomescreen> {
+  String? username;
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +22,10 @@ class Musichomescreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         title: Text(
-          "Tunify",
+          "Welcome To Tunify, ",
           style: TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
             letterSpacing: 1.5,
           ),
@@ -93,10 +101,7 @@ class Musichomescreen extends StatelessWidget {
               ],
             ),
           ),
-
           const SizedBox(height: 30),
-
-          // Example Featured Playlist Section
           Text(
             "Top Picks for You",
             style: TextStyle(
@@ -107,7 +112,7 @@ class Musichomescreen extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           Container(
-            height: 180, // Increased height to fit image + text
+            height: 180,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               itemCount: 15,

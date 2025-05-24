@@ -53,9 +53,9 @@ class Playhomecreen3 extends StatelessWidget {
             Text('Fujii Kaze', style: TextStyle(color: Colors.black)),
             SizedBox(height: 30),
             Slider(
-              value: 166, // 2:46 in seconds
+              value: 210,
               min: 0,
-              max: 243, // 4:03 in seconds
+              max: 243,
               activeColor: Colors.black,
               inactiveColor: Colors.grey,
               onChanged: (value) {},
@@ -65,7 +65,7 @@ class Playhomecreen3 extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  Text("02:46", style: TextStyle(color: Colors.grey)),
+                  Text("03:46", style: TextStyle(color: Colors.grey)),
                   Text("04:03", style: TextStyle(color: Colors.grey)),
                 ],
               ),

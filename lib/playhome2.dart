@@ -53,7 +53,7 @@ class Playhomecreen2 extends StatelessWidget {
             Text('Billie Elliesh', style: TextStyle(color: Colors.black)),
             SizedBox(height: 30),
             Slider(
-              value: 166, // 2:46 in seconds
+              value: 106, // 2:46 in seconds
               min: 0,
               max: 243, // 4:03 in seconds
               activeColor: Colors.black,
@@ -65,8 +65,8 @@ class Playhomecreen2 extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  Text("02:46", style: TextStyle(color: Colors.grey)),
-                  Text("04:03", style: TextStyle(color: Colors.grey)),
+                  Text("01:56", style: TextStyle(color: Colors.grey)),
+                  Text("04:15", style: TextStyle(color: Colors.grey)),
                 ],
               ),
             ),
