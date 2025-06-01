@@ -48,10 +48,7 @@ Future<bool> Login({
     ScaffoldMessenger.of(
       context,
     ).showSnackBar(SnackBar(content: Text("Login Successfully")));
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => Musichomescreen()),
-    );
+    Navigator.pushNamed(context, '/musichome');
     return true;
   } catch (e) {
     ScaffoldMessenger.of(

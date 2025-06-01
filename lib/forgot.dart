@@ -56,13 +56,7 @@ class _ForgotscreenState extends State<Forgotscreen> {
                   width: 180,
                   child: ElevatedButton(
                     onPressed: () async {
-                      bool success = await forgot(
-                        email: email.text,
-                        context: context,
-                      );
-                      if (success) {
-                        email.clear();
-                      }
+                      forgot(email: email.text, context: context);
                     },
                     child: const Text(
                       "Send resent link",
